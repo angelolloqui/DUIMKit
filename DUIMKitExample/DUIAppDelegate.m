@@ -7,15 +7,14 @@
 //
 
 #import "DUIAppDelegate.h"
+#import "DUI.h"
 
 @implementation DUIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"main" ofType:@"css"];
+    [[DUI applicationDUI] styleSheetFromPath:path];
     return YES;
 }
 

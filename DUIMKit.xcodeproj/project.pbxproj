@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6D4F4118E58BF100DF69DE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */; };
+		0B6D4F4418E5B1E100DF69DE /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4318E5B1E100DF69DE /* main.css */; };
+		0B6D4F4518E5B4C300DF69DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F496018E5838D00463149 /* main.m */; };
 		0B8F495518E5838D00463149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495418E5838C00463149 /* Foundation.framework */; };
 		0B8F495718E5838D00463149 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495618E5838D00463149 /* CoreGraphics.framework */; };
 		0B8F495918E5838D00463149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495818E5838D00463149 /* UIKit.framework */; };
@@ -19,6 +22,11 @@
 		0B8F497018E5838D00463149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495818E5838D00463149 /* UIKit.framework */; };
 		0B8F497818E5838D00463149 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F497618E5838D00463149 /* InfoPlist.strings */; };
 		0B8F497A18E5838D00463149 /* DUIMKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F497918E5838D00463149 /* DUIMKitTests.m */; };
+		0B9D36FD18E5BFB20099CD30 /* DUIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D36FC18E5BFB20099CD30 /* DUIMainViewController.m */; };
+		0BB34EFC18E588990080C194 /* DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB34EF918E588990080C194 /* DUI.m */; };
+		0BB34EFD18E588990080C194 /* DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB34EF918E588990080C194 /* DUI.m */; };
+		0BB34EFE18E588990080C194 /* UIView+DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB34EFB18E588990080C194 /* UIView+DUI.m */; };
+		0BB34EFF18E588990080C194 /* UIView+DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB34EFB18E588990080C194 /* UIView+DUI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		0B6D4F4318E5B1E100DF69DE /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		0B8F495118E5838C00463149 /* DUIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8F495418E5838C00463149 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B8F495618E5838D00463149 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +58,12 @@
 		0B8F497518E5838D00463149 /* DUIMKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DUIMKitTests-Info.plist"; sourceTree = "<group>"; };
 		0B8F497718E5838D00463149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B8F497918E5838D00463149 /* DUIMKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUIMKitTests.m; sourceTree = "<group>"; };
+		0B9D36FB18E5BFB20099CD30 /* DUIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIMainViewController.h; sourceTree = "<group>"; };
+		0B9D36FC18E5BFB20099CD30 /* DUIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIMainViewController.m; sourceTree = "<group>"; };
+		0BB34EF818E588990080C194 /* DUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUI.h; sourceTree = "<group>"; };
+		0BB34EF918E588990080C194 /* DUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUI.m; sourceTree = "<group>"; };
+		0BB34EFA18E588990080C194 /* UIView+DUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DUI.h"; sourceTree = "<group>"; };
+		0BB34EFB18E588990080C194 /* UIView+DUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DUI.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B6D4F4218E58C6C00DF69DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0B9D36FB18E5BFB20099CD30 /* DUIMainViewController.h */,
+				0B9D36FC18E5BFB20099CD30 /* DUIMainViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		0B8F494818E5838C00463149 = {
 			isa = PBXGroup;
 			children = (
-				0B8F495A18E5838D00463149 /* DUIMKit */,
+				0BB34EF718E588990080C194 /* DUIMKit */,
+				0B8F495A18E5838D00463149 /* DUIMKitExample */,
 				0B8F497318E5838D00463149 /* DUIMKitTests */,
 				0B8F495318E5838C00463149 /* Frameworks */,
 				0B8F495218E5838C00463149 /* Products */,
@@ -104,15 +130,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0B8F495A18E5838D00463149 /* DUIMKit */ = {
+		0B8F495A18E5838D00463149 /* DUIMKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				0B6D4F4218E58C6C00DF69DE /* Classes */,
 				0B8F496318E5838D00463149 /* DUIAppDelegate.h */,
 				0B8F496418E5838D00463149 /* DUIAppDelegate.m */,
+				0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */,
 				0B8F496618E5838D00463149 /* Images.xcassets */,
 				0B8F495B18E5838D00463149 /* Supporting Files */,
 			);
-			path = DUIMKit;
+			path = DUIMKitExample;
 			sourceTree = "<group>";
 		};
 		0B8F495B18E5838D00463149 /* Supporting Files */ = {
@@ -122,6 +150,7 @@
 				0B8F495D18E5838D00463149 /* InfoPlist.strings */,
 				0B8F496018E5838D00463149 /* main.m */,
 				0B8F496218E5838D00463149 /* DUIMKit-Prefix.pch */,
+				0B6D4F4318E5B1E100DF69DE /* main.css */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +171,17 @@
 				0B8F497618E5838D00463149 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BB34EF718E588990080C194 /* DUIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				0BB34EF818E588990080C194 /* DUI.h */,
+				0BB34EF918E588990080C194 /* DUI.m */,
+				0BB34EFA18E588990080C194 /* UIView+DUI.h */,
+				0BB34EFB18E588990080C194 /* UIView+DUI.m */,
+			);
+			path = DUIMKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6D4F4418E5B1E100DF69DE /* main.css in Resources */,
 				0B8F495F18E5838D00463149 /* InfoPlist.strings in Resources */,
+				0B6D4F4118E58BF100DF69DE /* Storyboard.storyboard in Resources */,
 				0B8F496718E5838D00463149 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8F496118E5838D00463149 /* main.m in Sources */,
+				0BB34EFE18E588990080C194 /* UIView+DUI.m in Sources */,
+				0BB34EFC18E588990080C194 /* DUI.m in Sources */,
 				0B8F496518E5838D00463149 /* DUIAppDelegate.m in Sources */,
+				0B9D36FD18E5BFB20099CD30 /* DUIMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB34EFD18E588990080C194 /* DUI.m in Sources */,
+				0BB34EFF18E588990080C194 /* UIView+DUI.m in Sources */,
+				0B6D4F4518E5B4C300DF69DE /* main.m in Sources */,
 				0B8F497A18E5838D00463149 /* DUIMKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +407,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
-				INFOPLIST_FILE = "DUIMKit/DUIMKit-Info.plist";
+				GCC_PREFIX_HEADER = "DUIMKitExample/DUIMKit-Prefix.pch";
+				INFOPLIST_FILE = "DUIMKitExample/DUIMKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,8 +420,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
-				INFOPLIST_FILE = "DUIMKit/DUIMKit-Info.plist";
+				GCC_PREFIX_HEADER = "DUIMKitExample/DUIMKit-Prefix.pch";
+				INFOPLIST_FILE = "DUIMKitExample/DUIMKit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,6 +486,7 @@
 				0B8F497F18E5838D00463149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B8F498018E5838D00463149 /* Build configuration list for PBXNativeTarget "DUIMKitTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +495,7 @@
 				0B8F498218E5838D00463149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

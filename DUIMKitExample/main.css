@@ -1,0 +1,14 @@
+
+
+.box {
+    background-color: green;
+}
+
+.box .red {
+    background-color: red;
+}
+
+
+.main-view {
+    background-color: black;
+}
