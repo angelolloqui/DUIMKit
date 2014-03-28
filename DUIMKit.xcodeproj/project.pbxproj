@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B8F495518E5838D00463149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495418E5838C00463149 /* Foundation.framework */; };
+		0B8F495718E5838D00463149 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495618E5838D00463149 /* CoreGraphics.framework */; };
+		0B8F495918E5838D00463149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495818E5838D00463149 /* UIKit.framework */; };
+		0B8F495F18E5838D00463149 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F495D18E5838D00463149 /* InfoPlist.strings */; };
+		0B8F496118E5838D00463149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F496018E5838D00463149 /* main.m */; };
+		0B8F496518E5838D00463149 /* DUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F496418E5838D00463149 /* DUIAppDelegate.m */; };
+		0B8F496718E5838D00463149 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F496618E5838D00463149 /* Images.xcassets */; };
+		0B8F496E18E5838D00463149 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F496D18E5838D00463149 /* XCTest.framework */; };
+		0B8F496F18E5838D00463149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495418E5838C00463149 /* Foundation.framework */; };
+		0B8F497018E5838D00463149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F495818E5838D00463149 /* UIKit.framework */; };
+		0B8F497818E5838D00463149 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B8F497618E5838D00463149 /* InfoPlist.strings */; };
+		0B8F497A18E5838D00463149 /* DUIMKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F497918E5838D00463149 /* DUIMKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B8F497118E5838D00463149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B8F494918E5838C00463149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B8F495018E5838C00463149;
+			remoteInfo = DUIMKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B8F495118E5838C00463149 /* DUIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8F495418E5838C00463149 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0B8F495618E5838D00463149 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B8F495818E5838D00463149 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0B8F495C18E5838D00463149 /* DUIMKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DUIMKit-Info.plist"; sourceTree = "<group>"; };
+		0B8F495E18E5838D00463149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B8F496018E5838D00463149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B8F496218E5838D00463149 /* DUIMKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DUIMKit-Prefix.pch"; sourceTree = "<group>"; };
+		0B8F496318E5838D00463149 /* DUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUIAppDelegate.h; sourceTree = "<group>"; };
+		0B8F496418E5838D00463149 /* DUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUIAppDelegate.m; sourceTree = "<group>"; };
+		0B8F496618E5838D00463149 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0B8F496C18E5838D00463149 /* DUIMKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DUIMKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8F496D18E5838D00463149 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0B8F497518E5838D00463149 /* DUIMKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DUIMKitTests-Info.plist"; sourceTree = "<group>"; };
+		0B8F497718E5838D00463149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B8F497918E5838D00463149 /* DUIMKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUIMKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B8F494E18E5838C00463149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F495718E5838D00463149 /* CoreGraphics.framework in Frameworks */,
+				0B8F495918E5838D00463149 /* UIKit.framework in Frameworks */,
+				0B8F495518E5838D00463149 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B8F496918E5838D00463149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F496E18E5838D00463149 /* XCTest.framework in Frameworks */,
+				0B8F497018E5838D00463149 /* UIKit.framework in Frameworks */,
+				0B8F496F18E5838D00463149 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B8F494818E5838C00463149 = {
+			isa = PBXGroup;
+			children = (
+				0B8F495A18E5838D00463149 /* DUIMKit */,
+				0B8F497318E5838D00463149 /* DUIMKitTests */,
+				0B8F495318E5838C00463149 /* Frameworks */,
+				0B8F495218E5838C00463149 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B8F495218E5838C00463149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F495118E5838C00463149 /* DUIMKit.app */,
+				0B8F496C18E5838D00463149 /* DUIMKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B8F495318E5838C00463149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F495418E5838C00463149 /* Foundation.framework */,
+				0B8F495618E5838D00463149 /* CoreGraphics.framework */,
+				0B8F495818E5838D00463149 /* UIKit.framework */,
+				0B8F496D18E5838D00463149 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B8F495A18E5838D00463149 /* DUIMKit */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F496318E5838D00463149 /* DUIAppDelegate.h */,
+				0B8F496418E5838D00463149 /* DUIAppDelegate.m */,
+				0B8F496618E5838D00463149 /* Images.xcassets */,
+				0B8F495B18E5838D00463149 /* Supporting Files */,
+			);
+			path = DUIMKit;
+			sourceTree = "<group>";
+		};
+		0B8F495B18E5838D00463149 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F495C18E5838D00463149 /* DUIMKit-Info.plist */,
+				0B8F495D18E5838D00463149 /* InfoPlist.strings */,
+				0B8F496018E5838D00463149 /* main.m */,
+				0B8F496218E5838D00463149 /* DUIMKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B8F497318E5838D00463149 /* DUIMKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F497918E5838D00463149 /* DUIMKitTests.m */,
+				0B8F497418E5838D00463149 /* Supporting Files */,
+			);
+			path = DUIMKitTests;
+			sourceTree = "<group>";
+		};
+		0B8F497418E5838D00463149 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B8F497518E5838D00463149 /* DUIMKitTests-Info.plist */,
+				0B8F497618E5838D00463149 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B8F495018E5838C00463149 /* DUIMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B8F497D18E5838D00463149 /* Build configuration list for PBXNativeTarget "DUIMKit" */;
+			buildPhases = (
+				0B8F494D18E5838C00463149 /* Sources */,
+				0B8F494E18E5838C00463149 /* Frameworks */,
+				0B8F494F18E5838C00463149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DUIMKit;
+			productName = DUIMKit;
+			productReference = 0B8F495118E5838C00463149 /* DUIMKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B8F496B18E5838D00463149 /* DUIMKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B8F498018E5838D00463149 /* Build configuration list for PBXNativeTarget "DUIMKitTests" */;
+			buildPhases = (
+				0B8F496818E5838D00463149 /* Sources */,
+				0B8F496918E5838D00463149 /* Frameworks */,
+				0B8F496A18E5838D00463149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B8F497218E5838D00463149 /* PBXTargetDependency */,
+			);
+			name = DUIMKitTests;
+			productName = DUIMKitTests;
+			productReference = 0B8F496C18E5838D00463149 /* DUIMKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B8F494918E5838C00463149 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DUI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = DUIMKit;
+				TargetAttributes = {
+					0B8F496B18E5838D00463149 = {
+						TestTargetID = 0B8F495018E5838C00463149;
+					};
+				};
+			};
+			buildConfigurationList = 0B8F494C18E5838C00463149 /* Build configuration list for PBXProject "DUIMKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B8F494818E5838C00463149;
+			productRefGroup = 0B8F495218E5838C00463149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B8F495018E5838C00463149 /* DUIMKit */,
+				0B8F496B18E5838D00463149 /* DUIMKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B8F494F18E5838C00463149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F495F18E5838D00463149 /* InfoPlist.strings in Resources */,
+				0B8F496718E5838D00463149 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B8F496A18E5838D00463149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F497818E5838D00463149 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B8F494D18E5838C00463149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F496118E5838D00463149 /* main.m in Sources */,
+				0B8F496518E5838D00463149 /* DUIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B8F496818E5838D00463149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8F497A18E5838D00463149 /* DUIMKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B8F497218E5838D00463149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B8F495018E5838C00463149 /* DUIMKit */;
+			targetProxy = 0B8F497118E5838D00463149 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B8F495D18E5838D00463149 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B8F495E18E5838D00463149 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0B8F497618E5838D00463149 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B8F497718E5838D00463149 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B8F497B18E5838D00463149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0B8F497C18E5838D00463149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B8F497E18E5838D00463149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
+				INFOPLIST_FILE = "DUIMKit/DUIMKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0B8F497F18E5838D00463149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
+				INFOPLIST_FILE = "DUIMKit/DUIMKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0B8F498118E5838D00463149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DUIMKit.app/DUIMKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DUIMKitTests/DUIMKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0B8F498218E5838D00463149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DUIMKit.app/DUIMKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DUIMKit/DUIMKit-Prefix.pch";
+				INFOPLIST_FILE = "DUIMKitTests/DUIMKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B8F494C18E5838C00463149 /* Build configuration list for PBXProject "DUIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B8F497B18E5838D00463149 /* Debug */,
+				0B8F497C18E5838D00463149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B8F497D18E5838D00463149 /* Build configuration list for PBXNativeTarget "DUIMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B8F497E18E5838D00463149 /* Debug */,
+				0B8F497F18E5838D00463149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B8F498018E5838D00463149 /* Build configuration list for PBXNativeTarget "DUIMKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B8F498118E5838D00463149 /* Debug */,
+				0B8F498218E5838D00463149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B8F494918E5838C00463149 /* Project object */;
+}
