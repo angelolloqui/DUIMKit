@@ -11,6 +11,14 @@ var insertElement = function (id, tag) {
     return e;
 };
 
+//Remove an element from the DOM
+var removeElement = function (id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.parentNode.removeChild(e);
+    }
+};
+
 //Moves one element from child to new parent
 var moveElementToParent = function (id, idParent) {
     var child = document.getElementById(id);
@@ -22,7 +30,7 @@ var moveElementToParent = function (id, idParent) {
 };
 
 var computedStyleForProperty = function (id, property) {
-//    console.log("Computed style of "+id+":"+property);
+    //    console.log("Computed style of "+id+":"+property);
     return document.defaultView.getComputedStyle(document.getElementById(id)).getPropertyCSSValue(property);
-//    return window.getComputedStyle(document.getElementById(id)).getPropertyCSSValue(property);
+    //    return window.getComputedStyle(document.getElementById(id)).getPropertyCSSValue(property);
 }

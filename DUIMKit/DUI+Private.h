@@ -25,6 +25,6 @@
 
 // Manipulating DOM
 - (void)moveViewElement:(UIView *)element toParent:(UIView *)parent;
-
+- (void)removeElement:(UIView *)element;
 
 @end

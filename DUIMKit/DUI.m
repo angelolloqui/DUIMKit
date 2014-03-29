@@ -20,6 +20,7 @@
 @property (nonatomic, strong) JSValue *computedStyleForPropertyFunction;
 @property (nonatomic, strong) JSValue *elementByIdFunction;
 @property (nonatomic, strong) JSValue *insertElementFunction;
+@property (nonatomic, strong) JSValue *removeElementFunction;
 @property (nonatomic, strong) JSValue *moveElementToParentFunction;
 
 @end
@@ -44,11 +45,12 @@
         _jsContext[@"console"][@"log"] = ^(JSValue *msg) {
             NSLog(@"JavaScript log: %@", msg);
         };
-
+        
         //Quick accessores
         _elementByIdFunction = _jsContext[@"document"][@"getElementById"];
         _computedStyleForPropertyFunction = _jsContext[@"computedStyleForProperty"];
         _insertElementFunction = _jsContext[@"insertElement"];
+        _removeElementFunction = _jsContext[@"removeElement"];
         _moveElementToParentFunction = _jsContext[@"moveElementToParent"];
         
         //Load all stylers
@@ -67,6 +69,7 @@ static DUI *_applicationDUI = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _applicationDUI = [[self alloc] init];
+        [UIView DUI_swizzle];
     });
     return _applicationDUI;
 }
@@ -132,6 +135,9 @@ static DUI *_applicationDUI = nil;
     [self viewNeedsStyle:element];
 }
 
+- (void)removeElement:(UIView *)element {
+    [_removeElementFunction callWithArguments:@[element.DUI_id]];
+}
 
 #pragma mark - Helpers
 

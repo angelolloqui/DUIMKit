@@ -19,6 +19,7 @@
 @property (nonatomic, readonly) NSString *DUI_id;
 @property (nonatomic, strong) JSValue *DUI_Node;
 
++ (void)DUI_swizzle;
 - (NSString *)DUI_description;
 
 @end

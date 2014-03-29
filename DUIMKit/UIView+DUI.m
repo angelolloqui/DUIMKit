@@ -12,22 +12,29 @@
 
 @implementation UIView (DUI)
 
-+ (void)load {
++ (void)DUI_swizzle {
     static dispatch_once_t onceToken;
-    [DUI applicationDUI];
     dispatch_once(&onceToken, ^{
+        //willMoveToSuperview
         Method willMoveToSuperview = class_getInstanceMethod(self, @selector(willMoveToSuperview:));
         Method DUI_willMoveToSuperview = class_getInstanceMethod(self, @selector(DUI_willMoveToSuperview:));
+        method_exchangeImplementations(willMoveToSuperview, DUI_willMoveToSuperview);
         
-        //Swizzle methods
-        method_exchangeImplementations(willMoveToSuperview, DUI_willMoveToSuperview);        
+        //dealloc
+        Method dealloc = class_getInstanceMethod(self, NSSelectorFromString(@"dealloc"));
+        Method DUI_dealloc = class_getInstanceMethod(self, @selector(DUI_dealloc));
+        method_exchangeImplementations(dealloc, DUI_dealloc);
     });
+}
+
+- (void)DUI_dealloc {
+    [[DUI applicationDUI] removeElement:self];
+    [self DUI_dealloc];
 }
 
 - (void)DUI_willMoveToSuperview:(UIView *)newSuperview {
     [[DUI applicationDUI] moveViewElement:self toParent:newSuperview];
     [self DUI_willMoveToSuperview:newSuperview];
-    
 }
 
 - (void)setStyleClass:(NSString *)styleClass {
