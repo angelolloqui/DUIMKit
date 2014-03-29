@@ -33,9 +33,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleCSS" value="background-color: #CCC;"/>
-                                </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" id="yYJ-AE-eEi">
                                 <rect key="frame" x="177" y="140" width="130" height="90"/>

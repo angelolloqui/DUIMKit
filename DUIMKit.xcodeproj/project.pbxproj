@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0B32000018E6E2B300226AB9 /* DUI.js in Sources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
 		0B32000118E6E3B000226AB9 /* DUI.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
+		0B32000818E726C300226AB9 /* DUIBackgroundStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32000718E726C300226AB9 /* DUIBackgroundStyler.m */; };
+		0B32000918E726C300226AB9 /* DUIBackgroundStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32000718E726C300226AB9 /* DUIBackgroundStyler.m */; };
+		0B32000D18E72D7400226AB9 /* JSValue+DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32000C18E72D7400226AB9 /* JSValue+DUI.m */; };
+		0B32000E18E72D7400226AB9 /* JSValue+DUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32000C18E72D7400226AB9 /* JSValue+DUI.m */; };
+		0B32001118E730D600226AB9 /* DUIColorStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32001018E730D600226AB9 /* DUIColorStyler.m */; };
+		0B32001218E730D600226AB9 /* DUIColorStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B32001018E730D600226AB9 /* DUIColorStyler.m */; };
 		0B32FFFF18E6E20500226AB9 /* DUI.js in Sources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
 		0B6D4F4118E58BF100DF69DE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */; };
 		0B6D4F4418E5B1E100DF69DE /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4318E5B1E100DF69DE /* main.css */; };
@@ -43,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B32000218E7251E00226AB9 /* DUI+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DUI+Private.h"; sourceTree = "<group>"; };
+		0B32000418E7269D00226AB9 /* DUIStylerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIStylerProtocol.h; sourceTree = "<group>"; };
+		0B32000618E726C300226AB9 /* DUIBackgroundStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIBackgroundStyler.h; sourceTree = "<group>"; };
+		0B32000718E726C300226AB9 /* DUIBackgroundStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIBackgroundStyler.m; sourceTree = "<group>"; };
+		0B32000B18E72D7400226AB9 /* JSValue+DUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSValue+DUI.h"; sourceTree = "<group>"; };
+		0B32000C18E72D7400226AB9 /* JSValue+DUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSValue+DUI.m"; sourceTree = "<group>"; };
+		0B32000F18E730D600226AB9 /* DUIColorStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUIColorStyler.h; sourceTree = "<group>"; };
+		0B32001018E730D600226AB9 /* DUIColorStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUIColorStyler.m; sourceTree = "<group>"; };
 		0B32FFFE18E6E20500226AB9 /* DUI.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = DUI.js; sourceTree = "<group>"; };
 		0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0B6D4F4318E5B1E100DF69DE /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
@@ -94,6 +108,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B32000518E726AB00226AB9 /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
+				0B32000618E726C300226AB9 /* DUIBackgroundStyler.h */,
+				0B32000718E726C300226AB9 /* DUIBackgroundStyler.m */,
+				0B32000F18E730D600226AB9 /* DUIColorStyler.h */,
+				0B32001018E730D600226AB9 /* DUIColorStyler.m */,
+			);
+			path = Stylers;
+			sourceTree = "<group>";
+		};
+		0B32000A18E72D5E00226AB9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0B32000B18E72D7400226AB9 /* JSValue+DUI.h */,
+				0B32000C18E72D7400226AB9 /* JSValue+DUI.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0B6D4F4218E58C6C00DF69DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,11 +214,15 @@
 		0BB34EF718E588990080C194 /* DUIMKit */ = {
 			isa = PBXGroup;
 			children = (
+				0B32000A18E72D5E00226AB9 /* Helpers */,
+				0B32000518E726AB00226AB9 /* Stylers */,
 				0BB34EF818E588990080C194 /* DUI.h */,
+				0B32000218E7251E00226AB9 /* DUI+Private.h */,
 				0BB34EF918E588990080C194 /* DUI.m */,
 				0BB34EFA18E588990080C194 /* UIView+DUI.h */,
 				0BB34EFB18E588990080C194 /* UIView+DUI.m */,
 				0B32FFFE18E6E20500226AB9 /* DUI.js */,
+				0B32000418E7269D00226AB9 /* DUIStylerProtocol.h */,
 			);
 			path = DUIMKit;
 			sourceTree = "<group>";
@@ -291,9 +329,12 @@
 				0B8F496118E5838D00463149 /* main.m in Sources */,
 				0B32FFFF18E6E20500226AB9 /* DUI.js in Sources */,
 				0BB34EFE18E588990080C194 /* UIView+DUI.m in Sources */,
+				0B32000818E726C300226AB9 /* DUIBackgroundStyler.m in Sources */,
+				0B32001118E730D600226AB9 /* DUIColorStyler.m in Sources */,
 				0BB34EFC18E588990080C194 /* DUI.m in Sources */,
 				0B8F496518E5838D00463149 /* DUIAppDelegate.m in Sources */,
 				0B9D36FD18E5BFB20099CD30 /* DUIMainViewController.m in Sources */,
+				0B32000D18E72D7400226AB9 /* JSValue+DUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B32000018E6E2B300226AB9 /* DUI.js in Sources */,
+				0B32000E18E72D7400226AB9 /* JSValue+DUI.m in Sources */,
 				0BB34EFD18E588990080C194 /* DUI.m in Sources */,
 				0BB34EFF18E588990080C194 /* UIView+DUI.m in Sources */,
 				0B6D4F4518E5B4C300DF69DE /* main.m in Sources */,
 				0B8F497A18E5838D00463149 /* DUIMKitTests.m in Sources */,
+				0B32000918E726C300226AB9 /* DUIBackgroundStyler.m in Sources */,
+				0B32001218E730D600226AB9 /* DUIColorStyler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

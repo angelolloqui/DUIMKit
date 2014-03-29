@@ -41,7 +41,7 @@
     UIView *touchedView = [self.view hitTest:point withEvent:nil];
     
     NSLog(@"element: %@", [touchedView DUI_description]);
-    NSLog(@"background-color: %@", [[DUI applicationDUI] computedStyleForElement:touchedView property:@"background-color"]);
+    touchedView.styleCSS = touchedView.styleCSS;
 }
 
 /*

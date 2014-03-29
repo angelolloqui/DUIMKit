@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 DUIMKit. All rights reserved.
 //
 
-#import "DUI.h"
-#import "UIView+DUI.h"
-@import JavaScriptCore;
+#import "DUI+Private.h"
+#import "DUIStylerProtocol.h"
+#import <objc/runtime.h>
 
-@interface DUI () <UIWebViewDelegate>
+@interface DUI ()
 
 @property (nonatomic, strong) UIWebView *virtualWebView;
 @property (nonatomic, strong) JSContext *jsContext;
@@ -31,6 +31,7 @@
     if (self) {
         
         //Configure Webview and JS context
+        _viewsToUpdate = [NSMutableSet set];
         _virtualWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
         _jsContext = [_virtualWebView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
         NSAssert([_jsContext isKindOfClass:[JSContext class]], @"Can not get a proper JSContext from webview");
@@ -50,8 +51,13 @@
         _insertElementFunction = _jsContext[@"insertElement"];
         _moveElementToParentFunction = _jsContext[@"moveElementToParent"];
         
-//        _viewsToUpdate = [NSMutableSet set];
-
+        //Load all stylers
+        NSMutableArray *stylers = [NSMutableArray array];
+        NSArray *classes = [self classesImplementingProtocol:@protocol(DUIStylerProtocol)];
+        for (Class cls in classes) {
+            [stylers addObject:[[cls alloc] init]];
+        }
+        _stylers = stylers;
     }
     return self;
 }
@@ -78,7 +84,7 @@ static DUI *_applicationDUI = nil;
 }
 
 - (NSString *)styleSheetCSS {
-    return [_jsContext[@"document"][@"head"][@"style"][@"innerHTML"] toString];
+    return [_jsContext[@"stylesheet"][@"innerHTML"] toString];
 }
 
 - (NSString *)styleClassForElement:(UIView *)element {
@@ -109,10 +115,8 @@ static DUI *_applicationDUI = nil;
 }
 
 
-- (NSString *)computedStyleForElement:(UIView *)element property:(NSString *)property {
-    JSValue *style = [_computedStyleForPropertyFunction callWithArguments:@[element.DUI_id, property]];
-    
-    return [style[@"cssText"] toString];    
+- (JSValue *)computedStyleForElement:(UIView *)element property:(NSString *)property {
+    return [_computedStyleForPropertyFunction callWithArguments:@[element.DUI_id, property]];
 }
 
 #pragma mark - DOM manipulaiton
@@ -128,13 +132,6 @@ static DUI *_applicationDUI = nil;
     [self viewNeedsStyle:element];
 }
 
-- (void)buildDOMFromElement:(UIView *)element {
-    [self insertElement:element];
-    [_moveElementToParentFunction callWithArguments:@[element.DUI_id, element.superview.DUI_id ?: [NSNull null]]];
-    for (UIView *subview in [element subviews]) {
-        [self buildDOMFromElement:subview];
-    }
-}
 
 #pragma mark - Helpers
 
@@ -146,20 +143,27 @@ static DUI *_applicationDUI = nil;
 }
 
 
-- (void)removeElement:(UIView *)element {
-//    if (element.DUI_insertedInDOM) {
-//        NSString *javascript = [NSString stringWithFormat:@"var id = '%@'; var e = document.getElementById(id); if (e) { e.parentNode.removeChild(e); document.body.appendChild(e); }", element.DUI_id];
-//        [_virtualWebView stringByEvaluatingJavaScriptFromString:javascript];
-//        element.DUI_insertedInDOM = NO;
-//    }
-}
-
-
 - (void)viewNeedsStyle:(UIView *)element {
+    if (!element) return;
     if (![_viewsToUpdate containsObject:element]) {
         [_viewsToUpdate addObject:element];
         for (UIView *v in element.subviews) {
             [self viewNeedsStyle:v];
+        }
+    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self styleViews];
+    });
+}
+
+
+- (void)styleViews {
+    NSSet *views = [_viewsToUpdate copy];
+    [_viewsToUpdate removeAllObjects];
+    
+    for (UIView *v in views) {
+        for (id<DUIStylerProtocol> styler in _stylers) {
+            [styler styleElement:v];
         }
     }
 }
@@ -167,5 +171,32 @@ static DUI *_applicationDUI = nil;
 - (NSString *)description {
     return [_virtualWebView stringByEvaluatingJavaScriptFromString:@"document.body.outerHTML"];
 }
+
+
+- (NSArray *)classesImplementingProtocol:(Protocol *)protocol{
+	//Count the total number of classes implementing the protocol
+    NSMutableArray *classesArray = [[NSMutableArray alloc] init];
+	int numClasses = objc_getClassList(NULL, 0);
+	if (numClasses > 0 ){
+        
+		//Get the classes
+		__unsafe_unretained Class *classes = (Class *)malloc(sizeof(Class) * numClasses);
+		numClasses = objc_getClassList(classes, numClasses);
+        
+		//For each class
+		for (int i=0; i<numClasses; i++){
+            
+            //Check if the class conforms to protocol
+			__unsafe_unretained Class cls = (Class)classes[i];
+            // class_conformsToProtocol(cls, protocol)
+			if (class_conformsToProtocol(cls, protocol)){
+				[classesArray addObject:cls];
+			}
+		}
+		free(classes);
+	}
+	return classesArray;
+}
+
 
 @end

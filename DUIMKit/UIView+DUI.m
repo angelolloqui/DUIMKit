@@ -7,7 +7,7 @@
 //
 
 #import "UIView+DUI.h"
-#import "DUI.h"
+#import "DUI+Private.h"
 #import <objc/runtime.h>
 
 @implementation UIView (DUI)
@@ -55,7 +55,6 @@
 }
 
 - (NSString *)DUI_tag {
-//    return @"div";
     return NSStringFromClass([self class]);
 }
 

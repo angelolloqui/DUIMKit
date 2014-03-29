@@ -8,28 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "UIView+DUI.h"
+
 @interface DUI : NSObject
 
 + (DUI *)applicationDUI;
 
+@property (nonatomic, strong) NSArray *stylers;
 
 - (void)styleSheetFromPath:(NSString *)url;
 - (NSString *)styleSheetCSS;
 
-
-// Computing styles
-- (NSString *)styleClassForElement:(UIView *)element;
-- (void)setStyleClass:(NSString *)cls forElement:(UIView *)element;
-
-- (NSString *)styleIdForElement:(UIView *)element;
-- (void)setStyleId:(NSString *)styleId forElement:(UIView *)element;
-
-- (NSString *)styleCSSForElement:(UIView *)element;
-- (void)setStyleCSS:(NSString *)css forElement:(UIView *)element;
-
-- (NSString *)computedStyleForElement:(UIView *)element property:(NSString *)property;
-
-// Manipulating DOM
-- (void)moveViewElement:(UIView *)element toParent:(UIView *)parent;
 
 @end

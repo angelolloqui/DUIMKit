@@ -2,13 +2,21 @@
 
 .box {
     background-color: rgb(100,200,0);
-    color: #FAFAAA;
 }
 
 .main-view {
-    background-color: blue;
+    background-color: #CCCCCC;
+    color: blue;
 }
 
 .red {
     background-color: red;
+}
+
+uiview {
+    background-color: white;
+}
+
+uilabel {
+   background-color: orange;
 }
