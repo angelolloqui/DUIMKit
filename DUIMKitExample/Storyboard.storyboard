@@ -27,12 +27,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aqy-Ds-SIc">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aqy-Ds-SIc">
                                 <rect key="frame" x="103" y="81" width="118" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleCSS" value="background-color: #CCC;"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" id="yYJ-AE-eEi">
                                 <rect key="frame" x="177" y="140" width="130" height="90"/>
@@ -42,9 +45,6 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="box red"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Yqi-rW-RvL" appends="YES" id="7tv-8j-VIM"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="7Mh-hK-VVR">
                                 <rect key="frame" x="17" y="140" width="145" height="90"/>
@@ -54,18 +54,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="box"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ciR-BV-k0w" appends="YES" id="PBB-es-ktN"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="ztM-iI-I9B">
                                 <rect key="frame" x="17" y="238" width="87" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="IiM-IE-uik" appends="YES" id="AhU-jH-O0m"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" id="deA-qf-kX8">
                                 <rect key="frame" x="120" y="238" width="187" height="90"/>
@@ -106,30 +100,15 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="main-view"/>
                         </userDefinedRuntimeAttributes>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="qzX-by-ysz" appends="YES" id="Cas-yi-3jj"/>
+                            <outletCollection property="gestureRecognizers" destination="RiH-ME-JDz" appends="YES" id="BZf-IG-kQT"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="u2j-vc-exj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLU-iU-OLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="ciR-BV-k0w">
+                <tapGestureRecognizer id="RiH-ME-JDz">
                     <connections>
-                        <action selector="printDescription:" destination="nhc-xO-68m" id="vyG-0p-qD6"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="IiM-IE-uik">
-                    <connections>
-                        <action selector="printDescription:" destination="nhc-xO-68m" id="GyY-rO-mPH"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="qzX-by-ysz">
-                    <connections>
-                        <action selector="printDescription:" destination="nhc-xO-68m" id="fgq-8A-MZY"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Yqi-rW-RvL">
-                    <connections>
-                        <action selector="printDescription:" destination="nhc-xO-68m" id="EaU-aj-5sx"/>
+                        <action selector="printDescription:" destination="nhc-xO-68m" id="xM3-wn-j2N"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

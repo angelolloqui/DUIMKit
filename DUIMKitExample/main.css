@@ -1,14 +1,14 @@
 
 
 .box {
-    background-color: green;
+    background-color: rgb(100,200,0);
+    color: #FAFAAA;
 }
-
-.box .red {
-    background-color: red;
-}
-
 
 .main-view {
-    background-color: black;
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
 }

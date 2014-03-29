@@ -14,6 +14,7 @@
 
 
 - (void)styleSheetFromPath:(NSString *)url;
+- (NSString *)styleSheetCSS;
 
 
 // Computing styles
@@ -26,10 +27,9 @@
 - (NSString *)styleCSSForElement:(UIView *)element;
 - (void)setStyleCSS:(NSString *)css forElement:(UIView *)element;
 
-- (NSString *)computedStylesForElement:(UIView *)element;
+- (NSString *)computedStyleForElement:(UIView *)element property:(NSString *)property;
 
 // Manipulating DOM
 - (void)moveViewElement:(UIView *)element toParent:(UIView *)parent;
-
 
 @end

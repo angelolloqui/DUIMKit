@@ -64,17 +64,18 @@
 }
 
 - (NSString *)DUI_description {
-    return [NSString stringWithFormat:@"%@ %@ %@: %@", self.DUI_tag, self.DUI_id, self.styleClass, [[DUI applicationDUI] computedStylesForElement:self]];
+    return [NSString stringWithFormat:@"<%@ id=\"%@\" class=\"%@\" style=\"%@\">", self.DUI_tag, self.DUI_id, self.styleClass, self.styleCSS];
 }
 
 #pragma mark - Properties
-static void *const kDUI_insertedInDOM = (void *)&kDUI_insertedInDOM;
-- (BOOL)DUI_insertedInDOM {
-    return [objc_getAssociatedObject(self, kDUI_insertedInDOM) boolValue];
+
+static void *const kDUI_Node = (void *)&kDUI_Node;
+- (JSValue *)DUI_Node {
+    return objc_getAssociatedObject(self, kDUI_Node);
 }
 
-- (void)setDUI_insertedInDOM:(BOOL)DUI_insertedInDOM {
-    objc_setAssociatedObject(self, kDUI_insertedInDOM, [NSNumber numberWithBool:DUI_insertedInDOM], OBJC_ASSOCIATION_RETAIN);
+- (void)setDUI_Node:(JSValue *)DUI_Node {
+    objc_setAssociatedObject(self, kDUI_Node, DUI_Node, OBJC_ASSOCIATION_RETAIN);
 }
 
 @end

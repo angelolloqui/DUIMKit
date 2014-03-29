@@ -37,7 +37,11 @@
 }
 
 - (IBAction)printDescription:(UITapGestureRecognizer *)sender {
-    NSLog(@"%@", [sender.view DUI_description]);
+    CGPoint point = [sender locationInView:self.view];
+    UIView *touchedView = [self.view hitTest:point withEvent:nil];
+    
+    NSLog(@"element: %@", [touchedView DUI_description]);
+    NSLog(@"background-color: %@", [[DUI applicationDUI] computedStyleForElement:touchedView property:@"background-color"]);
 }
 
 /*

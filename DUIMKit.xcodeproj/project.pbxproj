@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B32000018E6E2B300226AB9 /* DUI.js in Sources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
+		0B32000118E6E3B000226AB9 /* DUI.js in Resources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
+		0B32FFFF18E6E20500226AB9 /* DUI.js in Sources */ = {isa = PBXBuildFile; fileRef = 0B32FFFE18E6E20500226AB9 /* DUI.js */; };
 		0B6D4F4118E58BF100DF69DE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */; };
 		0B6D4F4418E5B1E100DF69DE /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 0B6D4F4318E5B1E100DF69DE /* main.css */; };
 		0B6D4F4518E5B4C300DF69DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8F496018E5838D00463149 /* main.m */; };
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B32FFFE18E6E20500226AB9 /* DUI.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = DUI.js; sourceTree = "<group>"; };
 		0B6D4F4018E58BF100DF69DE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0B6D4F4318E5B1E100DF69DE /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 		0B8F495118E5838C00463149 /* DUIMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DUIMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +184,7 @@
 				0BB34EF918E588990080C194 /* DUI.m */,
 				0BB34EFA18E588990080C194 /* UIView+DUI.h */,
 				0BB34EFB18E588990080C194 /* UIView+DUI.m */,
+				0B32FFFE18E6E20500226AB9 /* DUI.js */,
 			);
 			path = DUIMKit;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B32000118E6E3B000226AB9 /* DUI.js in Resources */,
 				0B6D4F4418E5B1E100DF69DE /* main.css in Resources */,
 				0B8F495F18E5838D00463149 /* InfoPlist.strings in Resources */,
 				0B6D4F4118E58BF100DF69DE /* Storyboard.storyboard in Resources */,
@@ -283,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8F496118E5838D00463149 /* main.m in Sources */,
+				0B32FFFF18E6E20500226AB9 /* DUI.js in Sources */,
 				0BB34EFE18E588990080C194 /* UIView+DUI.m in Sources */,
 				0BB34EFC18E588990080C194 /* DUI.m in Sources */,
 				0B8F496518E5838D00463149 /* DUIAppDelegate.m in Sources */,
@@ -294,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B32000018E6E2B300226AB9 /* DUI.js in Sources */,
 				0BB34EFD18E588990080C194 /* DUI.m in Sources */,
 				0BB34EFF18E588990080C194 /* UIView+DUI.m in Sources */,
 				0B6D4F4518E5B4C300DF69DE /* main.m in Sources */,

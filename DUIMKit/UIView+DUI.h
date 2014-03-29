@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import JavaScriptCore;
 
 @interface UIView (DUI)
 
@@ -16,7 +17,7 @@
 
 @property (nonatomic, readonly) NSString *DUI_tag;
 @property (nonatomic, readonly) NSString *DUI_id;
-@property (nonatomic, assign) BOOL DUI_insertedInDOM;
+@property (nonatomic, strong) JSValue *DUI_Node;
 
 - (NSString *)DUI_description;
 
