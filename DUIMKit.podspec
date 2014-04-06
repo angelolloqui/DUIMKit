@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/angelolloqui/DUIMKit.git" }
   s.platform              = :ios, '7.0'
   s.ios.deployment_target = '7.0'
-  s.source_files          = 'DUIMKit/*.{h,m}'
+  s.source_files          = 'DUIMKit/**/*.{h,m}'
   s.resources             = "DUIMKit/DUI.js"
   s.frameworks            = 'JavaScriptCore'
   s.requires_arc          = true
